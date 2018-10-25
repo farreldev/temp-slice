@@ -1,0 +1,23 @@
+.scrolling-items {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .item {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    margin-right: 15px;
+    a {
+      white-space: pre-wrap;
+      font-size: 16px;
+      color: $bold-color;
+    }
+    &:first-child {
+      margin-left: 15px;
+    }
+  }
+}

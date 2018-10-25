@@ -1,0 +1,46 @@
+a.btn,
+button.btn,
+input[type='button'].btn {
+  display: inline-block;
+  padding: 6px 25px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  background: #ffffff;
+  border: 1px darken(#ffffff, 8%) solid;
+  border-radius: 3px;
+  vertical-align: middle;
+
+  &.btn-center {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &.large {
+    font-size: 20px;
+    padding: 8px 40px;
+  }
+
+  &.small {
+    font-size: 12px;
+    padding: 5px 20px;
+  }
+
+  &:hover {
+    background: darken(#ffffff, 5%);
+  }
+
+  @each $class, $background, $font_color in $buttons {
+    &.#{$class} {
+      background: $background;
+      color: $font_color;
+      border-color: darken($background, 8%);
+      // border-color: $background;
+      &:hover {
+        background: darken($background, 5%);
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+*,
+*:after,
+*:before,
+html,
+body {
+  box-sizing: border-box;
+}
+
+p,a,b,span,strong,time,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 { font-size: 34px; }
+h2 { font-size: 30px; }
+h3 { font-size: 26px; }
+h4 { font-size: 22px; }
+h5 { font-size: 18px; }
+h6 { font-size: 14px; }
+
+a {
+  font-weight: 500;
+  color: $bold-color;
+  line-height: 1.4;
+  &.penulis {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+
+p {
+  font-weight: 400;
+  line-height: 30.18px;
+  line-height: 1.7;
+  letter-spacing: .063px;
+  margin-bottom: 15px;
+  color: $text-color;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  color: $bold-color;
+}
+
+section { 
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 10px solid #f2f2f2; 
+}
+
+figure {
+  margin-bottom: 10px;
+  width: 100%;
+  overflow: hidden;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+h3.section-title {
+  padding: 0 15px;
+  margin-bottom: 20px;
+  a {
+    color: #095189;
+  }
+  &.blue {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: $blue-color;
+    a {
+      color: #fff;
+    }
+  }
+  &.text-white {
+    a {
+      color: #fff;
+    }
+  }
+  &.lineBottom {
+    position: relative;
+    &:before {
+      position: absolute;
+      left: 15px;
+      bottom: -5px;
+      content: '';
+      width: 35px;
+      height: 3px;
+      background-color: #fff;
+    }
+    a {
+      color: #fff;
+    }
+  }
+}

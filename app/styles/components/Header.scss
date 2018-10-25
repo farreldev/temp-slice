@@ -1,0 +1,37 @@
+header {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: #ffffff;
+    border-bottom: 4px solid $base-color-2;
+    background-color: $base-color;
+    .slot {
+      align-self: center;
+      a.top-brand {
+        display: inline-block;
+        vertical-align: middle;
+        width: 150px;
+        img {
+          display: block;
+          width: 100%;
+        }
+      }
+      a.signin,
+      a.search {
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+      }
+      a.signin {
+        background-image: url('../images/icon-signin.svg');
+      }
+      a.search {
+        position: relative;
+        left: 15px;
+        background-image: url('../images/search.svg');
+      }
+    }
+  }
+}

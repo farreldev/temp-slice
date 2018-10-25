@@ -1,0 +1,25 @@
+.listing-news {
+  .news-item {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    .wrap-slot {
+      display: flex;
+      flex-flow: nowrap row;
+      margin-bottom: 10px;
+      .slot {
+        flex: 1;
+        &:first-child {
+          padding-right: 10px;
+          flex: 1.5;
+        }
+        &.left {
+          a {
+            font-size: 18px;
+            line-height: 1.5;
+            color: $bold-color;
+          }
+        }
+      }
+    }
+  }
+}

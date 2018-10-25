@@ -1,0 +1,16 @@
+.headline {
+  margin-bottom: 0;
+  border-bottom: none;
+  figure {
+    margin-bottom: 10px;
+  }
+  article {
+    padding: 0 15px;
+    h2 {
+      margin-bottom: 10px;
+      a {
+        color: $bold-color;
+      }
+    }
+  }
+}

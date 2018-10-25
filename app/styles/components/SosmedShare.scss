@@ -1,0 +1,71 @@
+.sosmedShare {
+  position: relative;
+  text-align: center;
+  ul {
+    display: inline-block;
+    vertical-align: middle;
+    li {
+      margin: 0 4px;
+      display: inline-block;
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+      a {
+        display: block;
+        width: 28px;
+        height: 28px;
+        text-align: center;
+        border-radius: 50%;
+        background: salmon;
+        i {
+          font-size: 16px;
+          line-height: 28px;
+          color: #FFFFFF;
+        }
+        &[class*=facebook] {
+          background-color: $fb;
+          &:hover {
+            background-color: darken($fb, 5%);
+          }
+        }
+        &[class*=twitter] {
+          background-color: $tw;
+          &:hover {
+            background-color: darken($tw, 5%);
+          }
+        }
+        &[class*=instagram] {
+          background-color: $insta;
+          &:hover {
+            background-color: darken($insta, 5%);
+          }
+        }
+        &[class*=gg-plus] {
+          background-color: $gp;
+          &:hover {
+            background-color: darken($gp, 5%);
+          }
+        }
+        &[class*=linkedin] {
+          background-color: $lnk;
+          &:hover {
+            background-color: darken($lnk, 5%);
+          }
+        }
+        &[class*=medium] {
+          background-color: $md;
+          &:hover {
+            background-color: darken($md, 5%);
+          }
+        }
+        &[class*=youtube] {
+          background-color: $yt;
+          &:hover {
+            background-color: darken($yt, 5%);
+          }
+        }
+      }
+    }
+  }
+}

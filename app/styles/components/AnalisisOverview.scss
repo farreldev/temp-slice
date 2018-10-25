@@ -1,0 +1,22 @@
+section.analisis-overview {
+  padding: 15px 0;
+  background-color: $base-color-3;
+  margin-bottom: 0;
+  article {
+    padding: 0 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    .slot {
+      figure {
+        width: 120px;
+      }
+      a {
+        color: #fff;
+      }
+      &:nth-child(1) {
+        padding-right: 15px;
+      }
+    }
+  }
+}

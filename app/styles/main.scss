@@ -1,0 +1,47 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import 'bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'bower_components/slick-carousel/slick/slick.scss';
+// endbower
+
+/* Custom Bootstrap */
+@import 'setup/custom-bootstrap';
+
+/* Import setup set */
+@import 
+  'setup/var',
+  'setup/mixins';
+
+/* Import Global Style */
+@import
+  'global/reset',
+  'global/helper',
+  'global/global-set.scss',
+  'global/wrapper';
+
+@import 
+  'global-components/buttons.scss',
+  'global-components/ScrollingItems';
+
+/* Import Components */
+@import 
+  'components/Header',
+  'components/Footer',
+  'components/BtnHum',
+  'components/Headline',
+  'components/LinkDirectory',
+  'components/TopicList',
+  'components/BarInfo',
+  'components/ListingNews',
+  'components/InfografikOverview',
+  'components/DataboksOverview',
+  'components/OpiniOverview',
+  'components/OpiniScrolling',
+  'components/AnalisisOverview',
+  'components/VideoOverview',
+  'components/SosmedShare';
+
+/* Import Responsive */
+@import 
+  'responsive/mobile',
+  'responsive/small-mobile';
